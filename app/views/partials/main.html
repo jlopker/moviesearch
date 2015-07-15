@@ -48,10 +48,25 @@
         <b>Writers: </b> {{ details.Writer }}
       </p>
 
+      <div ng-if="!showThanks">
+        <h3>Email this info!</h3>
+        <form class="input-group" ng-submit="sendInfo()">
+          <input type="email" ng-model="user.email" class="form-control" placeholder="Email" />
+          <span class="input-group-btn">
+            <button class="btn btn-default">Send Info</button>
+          </span>
+        </form>
+      </div>
+
+      <div ng-if="showThanks">
+        <h4>Thanks!</h4>
+      </div>
+  
     </div>
   </div>
 
   <div ng-if="details.Response==='False'">
     No results found.
   </div>
+
 </div>
