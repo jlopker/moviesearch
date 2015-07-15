@@ -1,7 +1,7 @@
 # moviesearch
 Search Movies using OMDb API
 
-This app has a Node/Express backend and a Angularjs frontend. Additionally, it has a mailing feature that allows the user to email information about the movie to themselves using NodeMailer.
+This app has a Node/Express backend and an Angularjs frontend. Additionally, it has a mailing feature (using Nodemailer) that allows the user to email information about the movie to themselves.
 
 To run:
 
